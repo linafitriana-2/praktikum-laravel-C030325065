@@ -1,13 +1,22 @@
-public function up(): void
-{
-    Schema::table('mahasiswas', function (Blueprint $table) {
-        $table->string('email')->nullable()->after('nama');
-    });
-}
+<?php
 
-public function down(): void
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
 {
-    Schema::table('mahasiswas', function (Blueprint $table) {
-        $table->dropColumn('email');
-    });
-}
+    public function up(): void
+    {
+        Schema::table('mahasiswas', function (Blueprint $table) {
+            $table->string('email')->nullable()->after('nama');
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::table('mahasiswas', function (Blueprint $table) {
+            $table->dropColumn('email');
+        });
+    }
+};
