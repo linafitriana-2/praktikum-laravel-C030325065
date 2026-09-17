@@ -5,15 +5,20 @@ Repositori ini berisi kode tugas dan praktikum mata kuliah Pemrograman Web mengg
 ## Cara Menjalankan Proyek
 
 1. Clone repositori:
-   git clone https://github.com/linafitriana-2/praktikum-laravel-C030325065.git
+git clone https://github.com/linafitriana-2/praktikum-laravel-C030325065.git
 2. Masuk direktori:
-   cd praktikum-laravel-C030325065
+cd praktikum-laravel-C030325065
 3. Instal dependensi:
-   composer install
+composer install
 4. Salin environment:
-   cp .env.example .env
-   php artisan key:generate
+cp .env.example .env
+php artisan key:generate
 5. Migrasi database:
-   php artisan migrate:fresh --seed
+php artisan migrate:fresh --seed
 6. Jalankan server:
-   php artisan serve
+php artisan serve
+
+
+
+> Catatan: Proyek ini diuji pada lingkungan Laravel 13.
+
